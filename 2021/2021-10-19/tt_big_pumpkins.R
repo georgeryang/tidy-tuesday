@@ -44,7 +44,7 @@ pumpkins_plot <- pumpkins_data %>%
     strip.text = element_text(size = 14, face = "bold"),
     axis.title = element_text(size = 14),
     axis.text = element_text(size = 14),
-    plot.title = element_text(size = 18, face = "bold"),
+    plot.title = element_text(size = 28, face = "bold"),
     legend.position = "none"
   ) +
   scale_fill_brewer(palette = "Oranges") +
@@ -55,4 +55,4 @@ pumpkins_plot <- pumpkins_data %>%
 
 pumpkins_plot
 
-# ggsave("tt_big_pumpkins.png", width = 16, height = 9) 
+ggsave("tt_big_pumpkins.png", width = 16, height = 9) 
