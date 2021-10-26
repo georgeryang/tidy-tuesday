@@ -4,7 +4,6 @@ library(tidyverse)
 library(janitor)
 library(stringi)
 library(magick)
-# library(tidytext)
 
 # Load data
 race <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-10-26/race.csv')
@@ -26,12 +25,10 @@ race_data <- race %>%
   filter(distance != 0 & aid_stations != 0 & country == "United States") %>%
   # Make sure event names are consistent
   mutate(event = stri_trans_general(str_to_title(event), id = "Latin-ASCII"),
-         dist_per_station = distance / aid_stations,
-         year = as.numeric(format(date, "%Y")))
+         dist_per_station = distance / aid_stations)
   
 tabyl(race_data$event)
 summary(race_data$dist_per_station)
-str(race_data$year)
 
 # Visualize data
 
