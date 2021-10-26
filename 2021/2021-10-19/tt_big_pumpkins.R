@@ -1,6 +1,7 @@
 # Load packages
 library(tidytuesdayR)
 library(tidyverse)
+library(janitor)
 library(tidytext)
 
 # Load data
