@@ -108,3 +108,7 @@ ggsave(
   width = 16,
   height = 7.5
 )
+
+# Alt text: This waffle plot shows the percentage of wins by the top 3
+# international cricket teams by year, from 1996 to 2005. Australia, South
+# Africa, and Pakistan have won about 32% to 50% of all matches every year.
