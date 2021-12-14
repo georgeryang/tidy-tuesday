@@ -8,8 +8,8 @@
 # Load packages
 library(tidyverse)
 library(janitor)
-#library(waffle)
-#library(ggtext)
+library(gt)
+library(gtExtras)
 
 # Load data
 spiders <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-12-07/spiders.csv')
