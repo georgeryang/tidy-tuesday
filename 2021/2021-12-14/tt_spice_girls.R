@@ -60,7 +60,7 @@ words <- lyrics_words %>% count(word, sort=TRUE)
 # Create word cloud
 
 # Wordcloud
-wordcloud2(words, color = "random-dark", backgroundColor = "#e1c2c1")
+wordcloud2(words, color = "random-light", backgroundColor = "#lightgray")
 
 # Hwordcloud: https://czxb.github.io/br/hwordcloudppt.html
 words_1 <- words %>% head(100)
